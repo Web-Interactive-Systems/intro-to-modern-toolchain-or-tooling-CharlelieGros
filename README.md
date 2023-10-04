@@ -1,7 +1,6 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/xnLk9Kav)
----
-type: NoteCard
----
+## [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/xnLk9Kav)
+
+## type: NoteCard
 
 # lab - modern toolchain or tooling
 
@@ -180,7 +179,7 @@ Check your **package.json** (and **node_modules)** to see that **date-fns** depe
 
 During the development parcel build and runs the app using a development server.
 
-In production, however, we need to build the app to generete an optimized bundble of html, js, and css files.
+In production, however, we need to build the app to generete an optimized bundle of html, js, and css files.
 
 To do so, first, stop the the parcel server running in terminal (command ctrl+c), and then run the following command:
 
@@ -196,7 +195,7 @@ yarn parcel build src/index.html
 - Run: “yarn eslint src/app.js” to check if your file contains a eslint issues.
 - Install and configure Prettier (<https://prettier.io/>).
 
-# Examle of eslint config
+# Example of eslint config
 
     module.exports = {
       // https://eslint.org/docs/latest/use/configure/language-options#specifying-environments

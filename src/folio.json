@@ -1,3 +1,42 @@
 {
-    "hello_cat": "Meou"
+  "information": {
+    "firstName": "Charlélie",
+    "lastName": "Gros",
+    "birthDate": "2003-06-29"
+  },
+  "interests": [
+    {
+      "name": "Sleep",
+      "description": "Recover energy",
+      "tools": ["bed", "sheets", "pillows"]
+    },
+    {
+      "name": "3D modeling",
+      "description": "creating 3D projects on my free time",
+      "tools": ["Blender", "Adobe Photoshop", "Adobe After Effect"]
+    },
+    {
+      "name": "Sport - Gym",
+      "description": "Lift weight is making me happy",
+      "tools": ["Basic-Fit"]
+    }
+  ],
+  "skills": ["skill #1", "skill #2", "skill #3"],
+  "projects": [
+    {
+      "name": "Project #1",
+      "description": "description project #1",
+      "thumbnail": "photo #1"
+    },
+    {
+      "name": "Project #2",
+      "description": "description project #2",
+      "thumbnail": "photo #2"
+    },
+    {
+      "name": "Project #3",
+      "description": "description project #3",
+      "thumbnail": "photo #3"
+    }
+  ]
 }
