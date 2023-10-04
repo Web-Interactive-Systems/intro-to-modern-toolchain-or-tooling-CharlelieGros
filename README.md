@@ -1,20 +1,20 @@
----
-type: NoteCard
----
+## [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/xnLk9Kav)
+
+## type: NoteCard
 
 # lab - modern toolchain or tooling
 
 In this lab, we set up an app using **_yarn_** manager and **_parcel_**.
 
-- npm is one of the first package managers
-- yarn is another package manager that is a bit faster than npm
-- parcel is a zero-configuration build system
+-   npm is one of the first package managers
+-   yarn is another package manager that is a bit faster than npm
+-   parcel is a zero-configuration build system
 
 ::::cal
 **Requirements**
 
-- Basic knowledge of the command line using your prefered terminal
-- Text editor, such as vs-code (recommended)
+-   Basic knowledge of the command line using your prefered terminal
+-   Text editor, such as vs-code (recommended)
 
 ::::
 
@@ -119,7 +119,7 @@ Keep parcel running in a terminal. When you make any changes on any file related
 ```js
 // src/app.js
 
-console.log("Hello there! here is my portfolio");
+console.log('Hello there! here is my portfolio')
 ```
 
 ```js
@@ -143,11 +143,11 @@ h1 {
 ```js
 // app.js
 
-const state = {};
+const state = {}
 
-const containerEl = document.getElementById("container");
+const containerEl = document.getElementById('container')
 
-containerEl.textContent = JSON.stringify(state, null, 2);
+containerEl.textContent = JSON.stringify(state, null, 2)
 ```
 
 # Show human-readable relative dates
@@ -157,15 +157,15 @@ Instead, we can show it as “18 years old” or “20 years old”, etc.
 
 ```js
 // app.js
-import { formatDistanceToNow } from "date-fns";
+import { formatDistanceToNow } from 'date-fns'
 
-const state = {};
+const state = {}
 
-const containerEl = document.getElementById("container");
+const containerEl = document.getElementById('container')
 
-state.birthday = `${formatDistanceToNow(new Date(state.birthdate))} old`;
+state.birthday = `${formatDistanceToNow(new Date(state.birthdate))} old`
 
-containerEl.textContent = JSON.stringify(state, null, 2);
+containerEl.textContent = JSON.stringify(state, null, 2)
 ```
 
 ::::cal
@@ -179,7 +179,7 @@ Check your **package.json** (and **node_modules)** to see that **date-fns** depe
 
 During the development parcel build and runs the app using a development server.
 
-In production, however, we need to build the app to generete an optimized bundble of html, js, and css files.
+In production, however, we need to build the app to generete an optimized bundle of html, js, and css files.
 
 To do so, first, stop the the parcel server running in terminal (command ctrl+c), and then run the following command:
 
@@ -189,13 +189,13 @@ yarn parcel build src/index.html
 
 # Additional todos
 
-- Add a script tag in package.json to start and build the app
-- Install eslint (<http://eslint.org>)
-- Add a script file .eslintrc.js to configure eslint. In this file you should at least add a rule to ban (meaning disable) “no-var”.
-- Run: “yarn eslint src/app.js” to check if your file contains a eslint issues.
-- Install and configure Prettier (<https://prettier.io/>).
+-   Add a script tag in package.json to start and build the app
+-   Install eslint (<http://eslint.org>)
+-   Add a script file .eslintrc.js to configure eslint. In this file you should at least add a rule to ban (meaning disable) “no-var”.
+-   Run: “yarn eslint src/app.js” to check if your file contains a eslint issues.
+-   Install and configure Prettier (<https://prettier.io/>).
 
-# Examle of eslint config
+# Example of eslint config
 
     module.exports = {
       // https://eslint.org/docs/latest/use/configure/language-options#specifying-environments
@@ -212,8 +212,9 @@ yarn parcel build src/index.html
 
 > Explore the “dist” folder. Explain what is this folder.
 
-…
+Dossier généré par le bundler qui contient l'ensemble des fichiers créés au moment du build.
+This is the code used in production.
 
 > Explain the different files generated in dist folder. What are these files? Why they are named the way they are?
 
-…
+Le hash des fichiers est présent pour gérer le cache des navigateurs. Si le contenu change, un nouveau fichier est créé avec un hash unique pour que le navigateur interprète qu'il y'a eu un changement et qu'il faut recharger le contenu.
